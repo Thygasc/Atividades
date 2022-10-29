@@ -4,32 +4,26 @@ public class objetoanimal {
     public static void main (String [] args){
         
         //instanciando animais
-        animal tigre = new animal();
-        animal gato = new animal();
-        animal cachorro = new animal();
-        animal rato = new animal();
-        animal leao = new animal();
-        animal golfinho = new animal();
+      //  animal(String Nome, String Alimentacao,int Patas,String Vida, String Habitat, String NomeCientifico, String Filo, String Sexo){
+
+        animal tigre = new animal("Tigre","Carnivoros",4,"8-10 anos","Florestas, pastagem, tundra e taiga","Panthera tigris","Cordados","M");
+        animal gato = new animal("Gato","Carnivoros",4,"12-18 Anos","Cidades","Felis Catus","Cordados","F");
+        animal cachorro = new animal("Cachorro","Carnivoro",4,"10-13 Anos","Cidades","Canis Lupus Familiaris","Cordados","M");
+        animal rato = new animal("Golfinho","Carnivoros",0,"10-45 Anos","Maior parte do oceano,exceto nos polos","Delphinus Delphis","Cordados","M");
+        animal leao = new animal("Leão","Carnivoro",4,"15-16 anos","Savanas","Panthera Leo","Cordados","F");
+        animal golfinho = new animal("Rato Branco","Racao",4,"3-5 Anos","Laboratorio","Rattus Norwegicus","Cordados","F");
 
         //definindo os dados de cada aniaml
-        //trigre
-        tigre.Nome = "Tigre";
-        tigre.NomeCientifico = "Panthera tigris";
-        tigre.Alimentação = "Carnivoros";
-        tigre.Filo = "Cordados";
-        tigre.Habitat = "Florestas, pastagem, tundra e taiga";
-        tigre.Patas = 4;
-        tigre.Sexo = "M";
-        tigre.Vida = "8 - 10 anos";
-        
-        System.out.println("Nome do Animal: "+tigre.Nome);
-        System.out.println("Nome Cientifico: "+tigre.NomeCientifico);
-        System.out.println("Alimentacao: "+tigre.Alimentação);
-        System.out.println("Filo: "+tigre.Filo);
-        System.out.println("Habitat: "+tigre.Habitat);
-        System.out.println("Numero de patas: "+tigre.Patas);
-        System.out.println("Sexo: "+tigre.Sexo);
-        System.out.println("Vida: "+tigre.Vida);
+        //trigre 
+
+        System.out.println("Nome do Animal: "+tigre.getNome());
+        System.out.println("Nome Cientifico: "+tigre.getNomeCientifico());
+        System.out.println("Alimentacao: "+tigre.getAlimentação());
+        System.out.println("Filo: "+tigre.getFilo());
+        System.out.println("Habitat: "+tigre.getHabitat());
+        System.out.println("Numero de patas: "+tigre.getPatas());
+        System.out.println("Sexo: "+tigre.getSexo());
+        System.out.println("Vida: "+tigre.getVida());
 
         tigre.Andar();
         tigre.Brincar();
@@ -43,23 +37,16 @@ public class objetoanimal {
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n");
 
         //gato
-        gato.Nome = "Gato ";
-        gato.NomeCientifico = "Felis catus";
-        gato.Alimentação = "Carnivoros";
-        gato.Filo = "Cordados";
-        gato.Habitat = "Cidades";
-        gato.Patas = 4;
-        gato.Sexo = "F";
-        gato.Vida = "12 - 18 anos";
 
-        System.out.println("Nome do Animal: "+gato.Nome);
-        System.out.println("Nome Cientifico: "+gato.NomeCientifico);
-        System.out.println("Alimentacao: "+gato.Alimentação);
-        System.out.println("Filo: "+gato.Filo);
-        System.out.println("Hhabitat: "+gato.Habitat);
-        System.out.println("Numero de patas: "+gato.Patas);
-        System.out.println("Sexo: "+gato.Sexo);
-        System.out.println("Vida: "+gato.Vida);
+        System.out.println("Nome do Animal: "+gato.getNome());
+        System.out.println("Nome Cientifico: "+gato.getNomeCientifico());
+        System.out.println("Alimentacao: "+gato.getAlimentação());
+        System.out.println("Filo: "+gato.getFilo());
+        System.out.println("Habitat: "+gato.getHabitat());
+        System.out.println("Numero de patas: "+gato.getPatas());
+        System.out.println("Sexo: "+gato.getSexo());
+        System.out.println("Vida: "+gato.getVida());
+
 
         gato.Andar();
         gato.Brincar();
@@ -74,23 +61,16 @@ public class objetoanimal {
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n");
 
         //cachorro
-        cachorro.Nome = "Cachorro";
-        cachorro.NomeCientifico = "Canis lupus familiaris";
-        cachorro.Alimentação = "Carnivoro";
-        cachorro.Filo = "Cordados";
-        cachorro.Habitat = "Cidades";
-        cachorro.Patas = 4;
-        cachorro.Sexo = "M";
-        cachorro.Vida = "10 - 13 anos";        
+        
+        System.out.println("Nome do Animal: "+cachorro.getNome());
+        System.out.println("Nome Cientifico: "+cachorro.getNomeCientifico());
+        System.out.println("Alimentacao: "+cachorro.getAlimentação());
+        System.out.println("Filo: "+cachorro.getFilo());
+        System.out.println("Habitat: "+cachorro.getHabitat());
+        System.out.println("Numero de patas: "+cachorro.getPatas());
+        System.out.println("Sexo: "+cachorro.getSexo());
+        System.out.println("Vida: "+cachorro.getVida());
 
-        System.out.println("Nome do Animal: "+cachorro.Nome);
-        System.out.println("Nome Cientifico: "+cachorro.NomeCientifico);
-        System.out.println("Alimentacao: "+cachorro.Alimentação);
-        System.out.println("Filo: "+cachorro.Filo);
-        System.out.println("Habitat: "+cachorro.Habitat);
-        System.out.println("Numero de patas: "+cachorro.Patas);
-        System.out.println("Sexo: "+cachorro.Sexo);
-        System.out.println("Vida: "+cachorro.Vida);
 
         cachorro.Andar();
         cachorro.Brincar();
@@ -104,23 +84,16 @@ public class objetoanimal {
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n");
 
         //Rato
-        rato.Nome = "Rato Branco ou Rato Wistar";
-        rato.NomeCientifico = "Rattus norwegicus";
-        rato.Alimentação = "Ração";
-        rato.Filo = "Cordados";
-        rato.Habitat = "Laboratorios";
-        rato.Patas = 4;
-        rato.Sexo = "F";
-        rato.Vida = "3 - 5 anos";
-        
-        System.out.println("Nome do Animal: "+rato.Nome);
-        System.out.println("Nome Cientifico: "+rato.NomeCientifico);
-        System.out.println("Alimentacao: "+rato.Alimentação);
-        System.out.println("Filo: "+rato.Filo);
-        System.out.println("Habitat: "+rato.Habitat);
-        System.out.println("Numero de patas: "+rato.Patas);
-        System.out.println("Vida: "+rato.Sexo);
-        System.out.println("Sexo: "+rato.Vida);
+
+        System.out.println("Nome do Animal: "+rato.getNome());
+        System.out.println("Nome Cientifico: "+rato.getNomeCientifico());
+        System.out.println("Alimentacao: "+rato.getAlimentação());
+        System.out.println("Filo: "+rato.getFilo());
+        System.out.println("Habitat: "+rato.getHabitat());
+        System.out.println("Numero de patas: "+rato.getPatas());
+        System.out.println("Sexo: "+rato.getSexo());
+        System.out.println("Vida: "+rato.getVida());
+
 
         rato.Andar();
         rato.Brincar();
@@ -132,25 +105,17 @@ public class objetoanimal {
         rato.Reprocriar();
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n");
 
-        //Leao
-        leao.Nome = "Leão";
-        leao.NomeCientifico = "Panthera leo";
-        leao.Alimentação = "Carnivoro";
-        leao.Filo = "Cordados";
-        leao.Habitat = "Savanas";
-        leao.Patas = 4;
-        leao.Sexo = "F";
-        leao.Vida = "15 - 16 anos ";
+        //Leao        
         
-        
-        System.out.println("Nome do Animal: "+leao.Nome);
-        System.out.println("Nome Cientifico: "+leao.NomeCientifico);
-        System.out.println("Alimentacao: "+leao.Alimentação);
-        System.out.println("Filo: "+leao.Filo);
-        System.out.println("Habitat: "+leao.Habitat);
-        System.out.println("Numero de patas: "+leao.Patas);
-        System.out.println("Sexo: "+leao.Sexo);
-        System.out.println("Vida: "+leao.Vida);
+        System.out.println("Nome do Animal: "+leao.getNome());
+        System.out.println("Nome Cientifico: "+leao.getNomeCientifico());
+        System.out.println("Alimentacao: "+leao.getAlimentação());
+        System.out.println("Filo: "+leao.getFilo());
+        System.out.println("Habitat: "+leao.getHabitat());
+        System.out.println("Numero de patas: "+leao.getPatas());
+        System.out.println("Sexo: "+leao.getSexo());
+        System.out.println("Vida: "+leao.getVida());
+
         leao.Andar();
         leao.Brincar();
         leao.Comer();
@@ -162,25 +127,15 @@ public class objetoanimal {
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n");
 
         //Golfinho
-        golfinho.Nome = "Golfinho";
-        golfinho.NomeCientifico = "Delphinus delphis";
-        golfinho.Alimentação = "Carnivoros";
-        golfinho.Filo = "cordados";
-        golfinho.Habitat = "Maior parte do oceano, exceto nos polos";
-        golfinho.Patas = 0;
-        golfinho.Sexo = "M";
-        golfinho.Vida = "10 - 45 anos";
-        
+        System.out.println("Nome do Animal: "+golfinho.getNome());
+        System.out.println("Nome Cientifico: "+golfinho.getNomeCientifico());
+        System.out.println("Alimentacao: "+golfinho.getAlimentação());
+        System.out.println("Filo: "+golfinho.getFilo());
+        System.out.println("Habitat: "+golfinho.getHabitat());
+        System.out.println("Numero de patas: "+golfinho.getPatas());
+        System.out.println("Sexo: "+golfinho.getSexo());
+        System.out.println("Vida: "+golfinho.getVida());
 
-        
-        System.out.println("Nome do Animal: "+golfinho.Nome);
-        System.out.println("Nome Cientifico: "+golfinho.NomeCientifico);
-        System.out.println("Alimentacao: "+golfinho.Alimentação);
-        System.out.println("Filo: "+golfinho.Filo);
-        System.out.println("Habitat: "+golfinho.Habitat);
-        System.out.println("Numero de patas: "+golfinho.Patas);
-        System.out.println("Sexo: "+golfinho.Sexo);
-        System.out.println("Vida: "+golfinho.Vida);
 
         golfinho.Andar();
         golfinho.Brincar();

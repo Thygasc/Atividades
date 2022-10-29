@@ -4,23 +4,12 @@ public class ObjetoAluno {
     
     public static void main(String[] args) {
         //instanciar objeto aluno
-        
-        Aluno Thiago = new Aluno();
-        Aluno Mayque = new Aluno();
-        Aluno Mateus = new Aluno();
-        Aluno Maria = new Aluno();
-        Aluno Maysa = new Aluno();
-        
-        //definindo valores dos atributos
-        //Thiago
-        Thiago.nome = "Thiago Coelho da Costa";
-        Thiago.idade = "21";
-        Thiago.cor = "Pardo";
-        Thiago.necessiadeespecial = false;
-        Thiago.RA = "4454545";
-        Thiago.curso = "Sistemas de Informação";
-        Thiago.periodo = "2";
-        
+        //    Aluno(String nome, String idade, String cor,boolean necessiadeespecial, String RA, String curso,String periodo){
+        Aluno Thiago = new Aluno("Thiago","21","Pardo",false,"4454545","Sistemas de Informacao","2");
+        Aluno Mayque = new Aluno("Mateus", "21", "Branco", true,"123456","ADS","5");
+        Aluno Mateus = new Aluno("Maysa","20","Pardo",false,"54689","Biomedicina","4");
+        Aluno Maria = new Aluno("Mayque","21","Negro", true,"645987","ADS","3");
+        Aluno Maysa = new Aluno("Maria","18","Branca",false,"147852","Direito","1");
         Thiago.Ajudar();
         Thiago.Estudar();
         Thiago.Comprar();
@@ -29,23 +18,19 @@ public class ObjetoAluno {
         Thiago.Reclamar();
         Thiago.Passar();
         
-        System.out.println("Nome:"+Thiago.nome);
-        System.out.println("Idade:"+Thiago.idade);
-        System.out.println("Cor:"+Thiago.cor);
-        System.out.println("Necessidade Especial :"+Thiago.necessiadeespecial);
-        System.out.println("RA :"+Thiago.RA);
-        System.out.println("curso:"+Thiago.periodo);
-        System.out.println("periodo:"+Thiago.curso);
+        System.out.println("Nome:"+Thiago.getNome());
+        System.out.println("Idade:"+Thiago.getIdade());
+        System.out.println("Cor:"+Thiago.getCor());
+        System.out.println("Necessidade Especial :"+Thiago.isNecessiadeespecial());
+        System.out.println("RA :"+Thiago.getRA());
+        System.out.println("curso:"+Thiago.getPeriodo());
+        System.out.println("periodo:"+Thiago.getCurso());
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*");
+
         
         //MATEUS
-        Mateus.nome = "Mateus Henrique Miguel Mariano";
-        Mateus.idade = "21";
-        Mateus.cor = "Branco";
-        Mateus.necessiadeespecial = false;
-        Mateus.RA = "123456";
-        Mateus.curso = "ADS";
-        Mateus.periodo = "5";
-        
+
         Mateus.Ajudar();
         Mateus.Estudar();
         Mateus.Comprar();
@@ -54,22 +39,17 @@ public class ObjetoAluno {
         Mateus.Reclamar();
         Mateus.Passar();
         
-        System.out.println("Nome:"+Mateus.nome);
-        System.out.println("Idade:"+Mateus.idade);
-        System.out.println("Cor:"+Mateus.cor);
-        System.out.println("Necessidade Especial :"+Mateus.necessiadeespecial);
-        System.out.println("RA :"+Mateus.RA);
-        System.out.println("curso:"+Mateus.periodo);
-        System.out.println("periodo:"+Mateus.curso);
-        
+        System.out.println("Nome:"+Mateus.getNome());
+        System.out.println("Idade:"+Mateus.getIdade());
+        System.out.println("Cor:"+Mateus.getCor());
+        System.out.println("Necessidade Especial :"+Mateus.isNecessiadeespecial());
+        System.out.println("RA :"+Mateus.getRA());
+        System.out.println("curso:"+Mateus.getPeriodo());
+        System.out.println("periodo:"+Mateus.getCurso());
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*");
         //Maysa
-        Maysa.nome = "Maysa Maria Mateus";
-        Maysa.idade = "20";
-        Maysa.cor = "Pardo";
-        Maysa.necessiadeespecial = false;
-        Maysa.RA = "54689";
-        Maysa.curso = "Biomedicina";
-        Maysa.periodo = "4";
+
         
         Maysa.Ajudar();
         Maysa.Estudar();
@@ -79,22 +59,18 @@ public class ObjetoAluno {
         Maysa.Reclamar();
         Maysa.Passar();
         
-        System.out.println("Nome:"+Maysa.nome);
-        System.out.println("Idade:"+Maysa.idade);
-        System.out.println("Cor:"+Maysa.cor);
-        System.out.println("Necessidade Especial :"+Maysa.necessiadeespecial);
-        System.out.println("RA :"+Maysa.RA);
-        System.out.println("curso:"+Maysa.periodo);
-        System.out.println("periodo:"+Maysa.curso);
-        
+        System.out.println("Nome:"+Maysa.getNome());
+        System.out.println("Idade:"+Maysa.getIdade());
+        System.out.println("Cor:"+Maysa.getCor());
+        System.out.println("Necessidade Especial :"+Maysa.isNecessiadeespecial());
+        System.out.println("RA :"+Maysa.getRA());
+        System.out.println("curso:"+Maysa.getPeriodo());
+        System.out.println("periodo:"+Maysa.getCurso());
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*");
+
         //Mayque
-        Mayque.nome = "Mayque Oliveira Rocha Pinto";
-        Mayque.idade = "21";
-        Mayque.cor = "Negro";
-        Mayque.necessiadeespecial = true;
-        Mayque.RA = "654987";
-        Mayque.curso = "ADS";
-        Mayque.periodo = "3";
+  
         
         Mayque.Ajudar();
         Mayque.Estudar();
@@ -104,22 +80,18 @@ public class ObjetoAluno {
         Mayque.Reclamar();
         Mayque.Passar();
         
-        System.out.println("Nome:"+Mayque.nome);
-        System.out.println("Idade:"+Mayque.idade);
-        System.out.println("Cor:"+Mayque.cor);
-        System.out.println("Necessidade Especial :"+Mayque.necessiadeespecial);
-        System.out.println("RA :"+Mayque.RA);
-        System.out.println("curso:"+Mayque.periodo);
-        System.out.println("periodo:"+Mayque.curso);
-        
+        System.out.println("Nome:"+Mayque.getNome());
+        System.out.println("Idade:"+Mayque.getIdade());
+        System.out.println("Cor:"+Mayque.getCor());
+        System.out.println("Necessidade Especial :"+Mayque.isNecessiadeespecial());
+        System.out.println("RA :"+Mayque.getRA());
+        System.out.println("curso:"+Mayque.getPeriodo());
+        System.out.println("periodo:"+Mayque.getCurso());
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*");
+
         //Maria 
-        Maria.nome = "Maria Eduarda Stankowich Caldeirari";
-        Maria.idade = "18";
-        Maria.cor = "Branca";
-        Maria.necessiadeespecial = false;
-        Maria.RA = "147852";
-        Maria.curso = "Direito";
-        Maria.periodo = "1";
+  
         
         Maria.Ajudar();
         Maria.Estudar();
@@ -129,14 +101,14 @@ public class ObjetoAluno {
         Maria.Reclamar();
         Maria.Passar();
         
-        System.out.println("Nome:"+Maria.nome);
-        System.out.println("Idade:"+Maria.idade);
-        System.out.println("Cor:"+Maria.cor);
-        System.out.println("Necessidade Especial :"+Maria.necessiadeespecial);
-        System.out.println("RA :"+Maria.RA);
-        System.out.println("curso:"+Maria.periodo);
-        System.out.println("periodo:"+Maria.curso);
-        
-        
+        System.out.println("Nome:"+Maria.getNome());
+        System.out.println("Idade:"+Maria.getIdade());
+        System.out.println("Cor:"+Maria.getCor());
+        System.out.println("Necessidade Especial :"+Maria.isNecessiadeespecial());
+        System.out.println("RA :"+Maria.getRA());
+        System.out.println("curso:"+Maria.getPeriodo());
+        System.out.println("periodo:"+Maria.getCurso());
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*");
+        System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*");        
     }
 }
